@@ -78,7 +78,7 @@ This model employs two training approaches:
 - PV-DM (Distributed Memory), akin to Word2Vec's Continuous Bag of Words (CBOW) model, considers **both context words** and the **paragraph vector** for word predictions.
 - PV-DBOW (Distributed Bag of Words) relies **solely on the paragraph vector** for predicting target words. The resulting vector representations encapsulate the semantic content of documents, facilitating tasks like document similarity, clustering, and classification.
 
-### Sentence Transformer (MiniLm l6 v7):
+### Sentence Transformer (MiniLM l6 v2):
 **Sentence Transformer** is a state-of-the-art natural language processing (NLP) model designed for **transforming** sentences or phrases into meaningful vector representations in a continuous vector space. Unlike traditional embeddings that capture word meanings, Sentence Transformer focuses on **encoding the semantic content of entire sentences**.
 
 The model is based on **transformer architecture**, a powerful neural network architecture that has shown remarkable success in various NLP tasks. Sentence Transformer is trained on large corpora using unsupervised learning, where it learns to generate dense vectors for sentences. One of the key advantages of Sentence Transformer is its ability to produce **contextualized embeddings**, meaning the **representation of a sentence can vary based on the context** in which it appears.
@@ -164,7 +164,7 @@ Here are the most similar samples to our external query with their similarity sc
 
 As observed, the outcomes are **somewhat subpar** when compared to the performance of the TF-IDF based semantic search algorithm. Once more, despite the query **falling under the sports** category, the model yielded results from **different categories** such as **world** and **business**.
 
-## MiniLM l6 v7 Results
+## MiniLM l6 v2 Results
 ### Random Query Results:
 Here are the most similar samples to our random query with their similarity scores:
 | Random Query | Category |
