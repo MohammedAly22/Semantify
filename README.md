@@ -1,4 +1,4 @@
-# SemanticSearch
+# Semantic Search
 **Semantic search** in Natural Language Processing (NLP) is an advanced approach to **information retrieval** that goes **beyond** the **traditional method of matching keywords**. It involves a profound understanding of the **meanings behind words** and the **contextual nuances** in which they are used.
 
 By leveraging techniques from NLP, semantic search aims to comprehend the **intricacies of human language**. This includes recognizing entities, such as people, places, and organizations, and understanding the relationships between them.
