@@ -92,13 +92,13 @@ Here is a random query from our dataset along with an external query that I will
 ## TF-IDF Results
 ### Random Query Results:
 Here are the most similar samples to our random query with their similarity scores:
-![1_tf_idf_random_query](https://github.com/MohammedAly22/Semantify/assets/90681796/fc4dc204-53c1-46d2-893e-fb7e28b36b0d)
+![1](https://github.com/MohammedAly22/Semantify/assets/90681796/792b1a5b-9067-41ce-a08a-c94533878738)
+
 
 
 ### External Query Results:
 Here are the most similar samples to our external query with their similarity scores:
-![2_tf_idf_external_query](https://github.com/MohammedAly22/Semantify/assets/90681796/7f332f30-4e63-4928-8a8d-c818e6b50432)
-
+![2](https://github.com/MohammedAly22/Semantify/assets/90681796/bdf21dd5-bf8a-4e47-a81f-38bd1e80adbe)
 
 
 As observed, **despite its simplicity**, this technique **performs quite well** and delivers quick and effective results. With minimal effort, we can obtain the **top similar** results from our dataset for our queries.
@@ -109,13 +109,12 @@ Additionally, we notice that the category of these queries is **sports**, and ou
 ## Doc2Vec Results
 ### Random Query Results:
 Here are the most similar samples to our random query with their similarity scores:
-![3_doc2vec_random_query](https://github.com/MohammedAly22/Semantify/assets/90681796/72b4ec9c-3c8b-46d3-b9f9-0c8481d97043)
+![3](https://github.com/MohammedAly22/Semantify/assets/90681796/81ceae43-2be6-44b9-bf96-f70fa1743470)
 
 
 ### External Query Results:
-Here are the most similar samples to our external query with their similarity scores:
-![4_doc2vec_external_query](https://github.com/MohammedAly22/Semantify/assets/90681796/cff2620b-b06c-489e-9b13-ce137e6739de)
-
+Here are the most similar samples to our external query with their similarity scores:\
+![4](https://github.com/MohammedAly22/Semantify/assets/90681796/c2c68ea5-1b5c-461d-92d5-dbe1ea29de17)
 
 
 As observed, the outcomes are **somewhat subpar** when compared to the performance of the TF-IDF based semantic search algorithm. Once more, despite the query **falling under the sports** category, the model yielded results from **different categories** such as **world** and **business**.
@@ -123,13 +122,12 @@ As observed, the outcomes are **somewhat subpar** when compared to the performan
 ## MiniLM l6 v2 Results
 ### Random Query Results:
 Here are the most similar samples to our random query with their similarity scores:
-![5_sentence_transformer_random_query](https://github.com/MohammedAly22/Semantify/assets/90681796/3074871b-b93c-4af2-bf41-314ac6a23144)
+![5](https://github.com/MohammedAly22/Semantify/assets/90681796/009afca7-2634-4776-84d6-e648e91eaf6d)
 
 
 ### External Query Results:
 Here are the most similar samples to our external query with their similarity scores:
-![6_sentence_transformer_external_query](https://github.com/MohammedAly22/Semantify/assets/90681796/b1487211-4e4d-476f-bb6f-49d06573bceb)
-
+![6](https://github.com/MohammedAly22/Semantify/assets/90681796/f6518abc-5939-449b-953e-b34564c32dba)
 
 
 As evident from the results, **the attention mechanisms** play a **crucial role** in providing **contextualized embeddings** for each sample in the dataset. This feature enables us to obtain **the most accurate matching results for our queries**, which specifically discusses a **basketball match** between the **Spurs** and b. The model **successfully retrieves all documents** related to the Spurs and Mavericks, showcasing a commendable similarity score.
