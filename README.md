@@ -68,6 +68,7 @@ The TF-IDF score for a term \( t \) in a document \( d \) within a corpus \( D \
 ```math
 \text{TF-IDF}(t, d, D) = \text{TF}(t, d) \times \text{IDF}(t, D)
 ```
+---
 
 ### Doc2Vec:
 Doc2Vec, an abbreviation for **Document to Vector**, is a notable natural language processing (NLP) technique that extends the principles of Word2Vec to entire documents or sentences.
@@ -77,6 +78,8 @@ In contrast to Word2Vec, which represents words as vectors in a continuous vecto
 This model employs two training approaches:
 - PV-DM (Distributed Memory), akin to Word2Vec's Continuous Bag of Words (CBOW) model, considers **both context words** and the **paragraph vector** for word predictions.
 - PV-DBOW (Distributed Bag of Words) relies **solely on the paragraph vector** for predicting target words. The resulting vector representations encapsulate the semantic content of documents, facilitating tasks like document similarity, clustering, and classification.
+
+---
 
 ### Sentence Transformer (MiniLM l6 v2):
 **Sentence Transformer** is a state-of-the-art natural language processing (NLP) model designed for **transforming** sentences or phrases into meaningful vector representations in a continuous vector space. Unlike traditional embeddings that capture word meanings, Sentence Transformer focuses on **encoding the semantic content of entire sentences**.
