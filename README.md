@@ -86,44 +86,19 @@ The model is based on **transformer architecture**, a powerful neural network ar
 # Results
 For better comparison between several models, I conducted two test cases: one on a random query from the dataset, and the other on an external query wrote it myself to see how robust our models are.
 
-Here is a random query from our dataset:
-| Random Query | Category |
-| --- | --- |
-| `spurs defeat mavericks 94 80 tim duncan scored 27 points san antonio spurs held dallas 3 17 shooting fourth quarter 94 80 victory mavericks wednesday night` | Sports |
-
-And, here is our external query that we will test the models on:
-| External Query | Category |
-| --- | --- |
-| `Real Madrid beat Barcelona 4-1 in the Spanish Super Cup in Saudi Arabia, as El Clasico delivered drama and brilliant goals once again` | Sports |
+Here is a random query from our dataset along with an external query that I will test the models on:
+![0_random_external_queries](https://github.com/MohammedAly22/Semantify/assets/90681796/49890239-79d4-47fe-9585-58644222a5ab)
 
 ## TF-IDF Results
 ### Random Query Results:
 Here are the most similar samples to our random query with their similarity scores:
-| Random Query | Category |
-| --- | --- |
-| `spurs defeat mavericks 94 80 tim duncan scored 27 points san antonio spurs held dallas 3 17 shooting fourth quarter 94 80 victory mavericks wednesday night` | Sports |
+![1_tf_idf_random_query](https://github.com/MohammedAly22/Semantify/assets/90681796/fc4dc204-53c1-46d2-893e-fb7e28b36b0d)
 
-| Matched Query | Category | Similarity Score |
-| --- | --- | --- |
-| `spurs defeat mavericks 94 80 tim duncan scored 27 points san antonio spurs held dallas 3 17 shooting fourth quarter 94 80 victory mavericks wednesday night` | Sports | 1.0000 |
-| `spurs beat magic 94 91 ap ap tim duncan 24 points 14 rebounds lead san antonio spurs 94 91 victory wednesday night orlando magic` | Sports | 0.4976 |
-| ` nba game summary san antonio dallas dallas tx sports network tim duncan 20 points 13 rebounds five blocks devin brown scored 14 16 points fourth quarter leading san antonio spurs 107 89 victory dallas mavericks american airlines center` | Sports | 0.4658 |
-| ` streaking spurs roll past sixers 88 80 ap ap tim duncan scored season high 34 points grabbed 13 rebounds lead san antonio spurs fifth straight victory 88 80 philadelphia 76ers thursday night` | Sports |0.4473 |
-| ` spurs past sixers 88 80 san antonio spurs snatched fifth straight victory away game philadelphia 76ers tim duncan led spurs season high 34 points 13 rebounds china radio international reported friday` | Sports | 0.4399 |
 
 ### External Query Results:
 Here are the most similar samples to our external query with their similarity scores:
-| Externa; Query | Category |
-| --- | --- |
-| `Real Madrid beat Barcelona 4-1 in the Spanish Super Cup in Saudi Arabia, as El Clasico delivered drama and brilliant goals once again.` | Sports |
+![2_tf_idf_external_query](https://github.com/MohammedAly22/Semantify/assets/90681796/7f332f30-4e63-4928-8a8d-c818e6b50432)
 
-| Matched Query | Category | Similarity Score |
-| --- | --- | --- |
-| `barcelona beat real madrid barcelona moved seven points clear top spanish league saturday following three nil victory home second placed real madrid` | Sports | 0.3614   |
-| `barcelona shuts rival real madrid madrid spain barcelona moved ahead spanish league beating rival real madrid 3 0 saturday country 39 biggest match` | Sports | 0.3411 |
-| `barcelona real madrid post home wins barcelona spain sports network david beckham scored game winner real madrid 39 galacticos 39 barcelona week two spanish premier division` | Sports | 0.3307 |
-| `barcelona beats real madrid spanish league barcelona moved ahead spanish league beating rival real madrid 3 0 saturday country 39 biggest match samuel eto 39 giovanni van bronckhorst scored first half ronaldinho` | Sports | 0.2882 |
-| `real madrid stays touch leader barcelona spanish lt b gt lt b gt four goals 11 minutes allowed real madrid destroy bernd schuster 39 levante win frustrated fans secured second place spanish league standings` | Sports | 0.2796 |
 
 
 As observed, **despite its simplicity**, this technique **performs quite well** and delivers quick and effective results. With minimal effort, we can obtain the **top similar** results from our dataset for our queries.
@@ -134,32 +109,13 @@ Additionally, we notice that the category of these queries is **sports**, and ou
 ## Doc2Vec Results
 ### Random Query Results:
 Here are the most similar samples to our random query with their similarity scores:
-| Random Query | Category |
-| --- | --- |
-| `spurs defeat mavericks 94 80 tim duncan scored 27 points san antonio spurs held dallas 3 17 shooting fourth quarter 94 80 victory mavericks wednesday night` | Sports |
+![3_doc2vec_random_query](https://github.com/MohammedAly22/Semantify/assets/90681796/72b4ec9c-3c8b-46d3-b9f9-0c8481d97043)
 
-| Matched Query | Category | Similarity Score |
-| --- | --- | --- |
-| `spurs defeat mavericks 94 80 tim duncan scored 27 points san antonio spurs held dallas 3 17 shooting fourth quarter 94 80 victory mavericks wednesday night` | Sports | 0.9542 |
-| `3 bombings resort towns sinai three explosions shook three egyptian sinai resorts popular vacationing israelis killing least 30 people wounding 100` | World | 0.7559 |
-| `sec sues 3 former kmart execs washington federal regulators filed civil fraud charges three former kmart executives five current former managers suppliers` | Business | 0.7360 |
-| `siebel moves toward self repairing software com october 11 2004 3 34 pm pt fourth priority 39 main focus enterprise directories organizations spawn projects around identity infrastructure` | Science/Technology | 0.7080 |
-| `cerberus buy lnr property 3 8 bn new york august 30 new ratings lnr property corporation lnr nys reportedly agreed acquired riley property holdings llc 3` | Business | 0.7076 |
 
 ### External Query Results:
 Here are the most similar samples to our external query with their similarity scores:
-| Externa; Query | Category |
-| --- | --- |
-| `Real Madrid beat Barcelona 4-1 in the Spanish Super Cup in Saudi Arabia, as El Clasico delivered drama and brilliant goals once again.` | Sports |
+![4_doc2vec_external_query](https://github.com/MohammedAly22/Semantify/assets/90681796/cff2620b-b06c-489e-9b13-ce137e6739de)
 
-| Matched Query | Category | Similarity Score |
-| --- | --- | --- |
-| `uefa cup champ takes super cup 2 1 victory porto uefa cup holders valencia beat european champion porto 2 1 win super cup monaco 39 stade louis ii friday midfielder vicente laid valencia goals ruben baraja heading
-` | Sports | 0.4815 |
-| `fa investigate chelsea west ham violence league cup match football association investigate crowd violence marred chelsea 39 1 0 win west ham league cup mateja kezman scored goal wednesday night stamford` | Sports | 0.3916 |
-| `marseille 39 european cup winning 39 sorcerer 39 dies belgian 1993 european cup french side marseille time side france captured european club football 39 premier trophy 1978 cup winners cup belgian giants anderlecht` | Sports | 0.3915 |
-| `update 1 inter make hard work cup win bologna inter milan came behind beat bologna 3 1 italian cup third round first leg match san siro stadium sunday` | Sports | 0.3821 |
-| `golf woods reveals cup ambition tiger woods wants playing vice captain next us ryder cup team` | World | 0.3502 |
 
 
 As observed, the outcomes are **somewhat subpar** when compared to the performance of the TF-IDF based semantic search algorithm. Once more, despite the query **falling under the sports** category, the model yielded results from **different categories** such as **world** and **business**.
@@ -167,31 +123,13 @@ As observed, the outcomes are **somewhat subpar** when compared to the performan
 ## MiniLM l6 v2 Results
 ### Random Query Results:
 Here are the most similar samples to our random query with their similarity scores:
-| Random Query | Category |
-| --- | --- |
-| `spurs defeat mavericks 94 80 tim duncan scored 27 points san antonio spurs held dallas 3 17 shooting fourth quarter 94 80 victory mavericks wednesday night` | Sports |
+![5_sentence_transformer_random_query](https://github.com/MohammedAly22/Semantify/assets/90681796/3074871b-b93c-4af2-bf41-314ac6a23144)
 
-| Matched Query | Category | Similarity Score |
-| --- | --- | --- |
-| `spurs defeat mavericks 94 80 tim duncan scored 27 points san antonio spurs held dallas 3 17 shooting fourth quarter 94 80 victory mavericks wednesday night` | Sports | 1.0000 |
-| `spurs run mavericks 107 89 ap ap devin brown sparked fourth quarter spurt two three point plays two dunks helping san antonio spurs beat dallas mavericks 107 89 monday night spoil pseudo coaching debut avery johnson` | Sports | 0.9195 |
-| `spurs 107 mavericks 89 devin brown sparked fourth quarter spurt two three point plays two dunks helping san antonio spurs beat dallas mavericks 107 89 monday night spoil pseudo coaching debut avery johnson` | Sports | 0.9107 |
-| `duncan leads spurs past hornets 83 69 ap ap tim duncan 19 points 12 rebounds lead san antonio spurs third straight victory 83 69 new orleans hornets friday night` | Sports | 0.9098 |
-| `nba game summary dallas san antonio mavericks 4 3 road season spurs 18 straight regular season home games dating back last year dallas season low eight assists san antonio tx sports network tim` | Sports | 0.9064 |
 
 ### External Query Results:
 Here are the most similar samples to our external query with their similarity scores:
-| Externa; Query | Category |
-| --- | --- |
-| `Real Madrid beat Barcelona 4-1 in the Spanish Super Cup in Saudi Arabia, as El Clasico delivered drama and brilliant goals once again.` | Sports |
+![6_sentence_transformer_external_query](https://github.com/MohammedAly22/Semantify/assets/90681796/b1487211-4e4d-476f-bb6f-49d06573bceb)
 
-| Matched Query | Category | Similarity Score |
-| --- | --- | --- |
-| `spain real madrid crush levante ronaldo scored twice real madrid ended two game winless slide 5 0 spanish league victory seventh placed levante santiago bernabeu sunday` | Sports | 0.8590   |
-| `barcelona beats real madrid spanish league barcelona moved ahead spanish league beating rival real madrid 3 0 saturday country 39 biggest match samuel eto 39 giovanni van bronckhorst scored first half ronaldinho` | Sports | 0.8589 |
-| `liga sunday wrap madrid answer critics real madrid ended talk crisis club thumped levante 5 0 bernabeu valencia moved back champions league places 2 0 win mallorca` | Sports | 0.8574 |
-| `barcelona 3 0 real madrid cameroon 39 samuel eto 39 fils helped barcelona trounce real madrid 3 0 move seven points clear great rivals spain 39 la liga` | Sports | 0.8547 |
-| `real madrid ponders biggest champions league loss four years real madrid began yesterday 39 match bayer leverkusen bookmakers 39 favorite win champions league record nine time european champion finished worst defeat competition four years` | Sports | 0.8535 |
 
 
 As evident from the results, **the attention mechanisms** play a **crucial role** in providing **contextualized embeddings** for each sample in the dataset. This feature enables us to obtain **the most accurate matching results for our queries**, which specifically discusses a **basketball match** between the **Spurs** and b. The model **successfully retrieves all documents** related to the Spurs and Mavericks, showcasing a commendable similarity score.
