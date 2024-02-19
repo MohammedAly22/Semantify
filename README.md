@@ -70,7 +70,7 @@ The TF-IDF score for a term \( t \) in a document \( d \) within a corpus \( D \
 ```
 
 ### Doc2Vec:
-Doc2Vec, an abbr****eviation for **Document to Vector**, is a notable natural language processing (NLP) technique that extends the principles of Word2Vec to entire documents or sentences.
+Doc2Vec, an abbreviation for **Document to Vector**, is a notable natural language processing (NLP) technique that extends the principles of Word2Vec to entire documents or sentences.
 
 In contrast to Word2Vec, which represents words as vectors in a continuous vector space, Doc2Vec focuses **on encoding the semantic meaning of entire documents**. The primary implementation of Doc2Vec is known as the **Paragraph Vector model**, where each document in a corpus is associated with a unique vector.
 
